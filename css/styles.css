@@ -55,6 +55,23 @@ h1 {
   /*background-color: grey;*/
 }
 
+.links {
+  color: #CDCDCD;
+}
+
+.links:hover { 
+  color: #F7DC4B;
+}
+
+.links-port {
+  color: #9B9B9B;
+}
+
+.links-port:hover { 
+  color: #F7DC4B;
+}
+
+
 button {
   border: none;
   outline: none;
