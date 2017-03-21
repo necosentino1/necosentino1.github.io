@@ -433,7 +433,7 @@ input[type=radio]:checked + label {
   }
 
   h1 {
-    font-size: 51px;
+    font-size: 48px;
   }
 
   .button-1 {
@@ -446,7 +446,7 @@ input[type=radio]:checked + label {
   }
 
   .name h2 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
 
