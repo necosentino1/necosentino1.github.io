@@ -190,7 +190,7 @@ input[type=radio]:checked + label {
 }
 
 .line {
-  height: 250px;
+  height: 100%;
   width: 3px;
   align-self: center;
   background-color: #F7DC4B;
@@ -303,9 +303,9 @@ input[type=radio]:checked + label {
 }
 
 
-@media screen and (min-width: 1201px) {
+/*@media screen and (min-width: 1201px) {
 
-}
+}*/
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
     .contact {
@@ -327,11 +327,11 @@ input[type=radio]:checked + label {
   }
 }  
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 324px) and (max-width: 768px) {
 
   .header {
     background-position: top left;
-    background-position-x: 28%; 
+    background-position-x: 25%; 
   }
 
   .contact {
@@ -343,7 +343,7 @@ input[type=radio]:checked + label {
   }
 
   .button-1 {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
 
   .name {
@@ -369,21 +369,9 @@ input[type=radio]:checked + label {
     height: 2625px;
     margin-top: 100px;
   }
-  
+
   .time-stamp {
     height: 375px;
-  }
-
-  .time-stamp-info {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .line {
-    height: 375px;
-    width: 3px;
-    align-self: center;
-    background-color: #F7DC4B;
   }
 
   .date {
@@ -394,8 +382,104 @@ input[type=radio]:checked + label {
     left: -4px;
   }
 
+  .time-stamp-info {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   .company-location-dates {
     width: 85%;
+  }
+
+  .title-description {
+    width: 85%  
+  }
+
+  .title-description h4 {
+    letter-spacing: 0.5px;
+    font-size: 22px;
+    font-weight: 200;
+  }
+
+  .company-location-dates h4 {
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+  }
+
+  .company-location-dates p {
+    font-size: 14px;
+  }  
+
+}  
+
+
+@media screen and (max-width: 323px) {
+
+  .header {
+    background-position: top left;
+    background-position-x: 25%; 
+  }
+
+  .contact {
+    display: none;
+  }
+
+  h1 {
+    font-size: 51px;
+  }
+
+  .button-1 {
+    margin-bottom: 20px;
+  }
+
+  .name {
+    width: 75%;
+    margin-left: 0;
+  }
+
+  .name h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .intro-reverse {
+    flex-direction: column;
+  }
+
+  .radio-buttons {
+    font-size: 17px;
+  }
+
+  .intro-reverse h2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .timeline {
+    height: 2625px;
+    margin-top: 100px;
+  }
+
+  .time-stamp {
+    height: 375px;
+  }
+
+  .time-stamp-info {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .company-location-dates {
+    width: 85%;
+  }
+
+  .date {
+    left: -14px;
+  }
+
+  .date-selected {
+    left: -4px;
   }
 
   .title-description {
