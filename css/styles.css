@@ -1,0 +1,414 @@
+* {
+  font-family: 'Open Sans', sans-serif;  
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background-image: url("../images/6-StockSnap_LTEXX1X1IR.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  justify-content: flex-end;
+  margin-left: 20px;
+  /*background-color: grey;*/
+}
+
+h1 {
+  font-size: 74px;
+  /*letter-spacing: 2px;*/
+  font-weight: 100;
+  /*margin-bottom: 20px;*/
+  color: white;
+  /*background:rgba(66,49,53,0.4);*/
+  /*background-color: grey;*/
+}
+
+
+.name h2 {
+  margin-bottom: 22px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  font-size: 28px;
+  color: white;
+  letter-spacing: 0.05em;
+  /*background:rgba(66,49,53,0.4);*/
+  /*background-color: grey;*/
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.button-1 {
+    /* transition: all 0.6s; */
+    height: 50px;
+    width: 170px;
+    /*background-color: #FFA59F;*/
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 6px;
+    background: #F7DC4B;
+    color: black;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+}
+
+.button-1:active {
+  background-color: #C27800;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  justify-content: center;
+  /*background-color: pink;*/
+}
+
+h3 {
+  color: #CDCDCD;
+  font-weight: 100;
+  font-size: 16px;
+  margin-bottom: 5px;
+  letter-spacing: 0.05em;
+}
+
+.intro-reverse {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.6s;
+  margin-left: 1%;
+  /*background-color: lightblue;*/
+}
+
+
+.intro-reverse h2 {
+  width: 31%;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  font-size: 32px;
+  margin-right: 20px;
+  color: #CDCDCD;
+  /*background-color: blue;*/
+}
+
+.radio-buttons {
+  font-size: 18px;
+  /*background-color: lightgreen;*/
+}
+
+input[type=radio] {
+  display: none; 
+}
+
+
+input[type=radio] + label {
+  display: inline-block;
+  margin: 4px;
+  padding: 12px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #CDCDCD;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+
+input[type=radio]:checked + label { 
+  background-image: none;
+  background-color: #F7DC4B;
+  color: black;
+  font-weight: 600;
+}
+
+.timeline {
+  height: 1750px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  transition: all 0.6s;
+  opacity: 0;
+}
+
+.timeline-reverse {
+  flex-direction: column-reverse;
+}
+
+.show {
+  opacity: 1;
+}
+
+.time-stamp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 250px;
+  width: 100%;
+  /*background-color: lightpink;*/
+}
+
+.time-stamp-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 94%;
+}
+
+.line-date {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  position: relative;
+  padding-left: 8px;
+}
+
+.line {
+  height: 100%;
+  width: 3px;
+  align-self: center;
+  background-color: #F7DC4B;
+}
+
+.date {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -13px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #F7DC4B;
+  border: 1px solid #F7DC4B;
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 12px;
+  -webkit-transform: rotate(-45deg);
+  transition: all 0.6s;
+}
+
+.date-selected {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -3px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #F7DC4B;
+  border: 1px solid #F7DC4B;
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 12px;
+  -webkit-transform: rotate(-45deg);
+}
+
+.date-selected .date-text {
+ display: none;
+}
+
+.date-text {
+  -webkit-transform: rotate(45deg);
+  color: black;
+  font-weight: 700;
+}
+
+.company-location-dates {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 10px;
+  /*background-color: purple;*/
+}
+
+.company-location-dates h4 {
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  font-size: 22px;
+  color: #CDCDCD;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.company-location-dates p {
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 5px;
+  /*color: #CDCDCD;*/
+  color: #9B9B9B;
+  letter-spacing: 0.05em;
+}
+
+.title-description {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 10px;
+/*  background-color: orange;*/
+}
+
+.title-description h4 {
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  font-size: 32px;
+  color: #CDCDCD;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.title-description p {
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 5px;
+  color: #9B9B9B;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+}
+
+.info {
+  transition: all 0.6s;
+  opacity: 0;
+}
+
+.info.show {
+  opacity: 1;
+}
+
+
+@media screen and (min-width: 1201px) {
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .contact {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .contact {
+    display: none;
+  }
+
+  h1 {
+  font-size: 65px;
+  }
+
+  .name h2 {
+    font-size: 25px;
+  }
+}  
+
+@media screen and (max-width: 768px) {
+
+  .header {
+    background-position: top left;
+    background-position-x: 28%; 
+  }
+
+  .contact {
+    display: none;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  .button-1 {
+    margin-bottom: 40px;
+  }
+
+  .name {
+    width: 75%;
+    margin-left: 0;
+  }
+
+  .name h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .intro-reverse {
+    flex-direction: column;
+  }
+
+  .intro-reverse h2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .timeline {
+    height: 2625px;
+    margin-top: 100px;
+  }
+  
+  .time-stamp {
+    height: 375px;
+  }
+
+  .time-stamp-info {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .date {
+    left: -14px;
+  }
+
+  .date-selected {
+    left: -4px;
+  }
+
+  .company-location-dates {
+    width: 85%;
+  }
+
+  .title-description {
+    width: 85%  
+  }
+
+  .title-description h4 {
+    letter-spacing: 0.5px;
+    font-size: 22px;
+    font-weight: 200;
+  }
+
+  .company-location-dates h4 {
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+  }
+
+  .company-location-dates p {
+    font-size: 14px;
+  }  
+
+}  
