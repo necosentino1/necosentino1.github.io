@@ -379,6 +379,13 @@ input[type=radio]:checked + label {
     justify-content: flex-start;
   }
 
+  .line {
+  height: 100%;
+  width: 3px;
+  align-self: center;
+  background-color: #F7DC4B;
+}
+
   .date {
     left: -14px;
   }
