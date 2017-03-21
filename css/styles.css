@@ -343,7 +343,7 @@ input[type=radio]:checked + label {
   }
 
   .button-1 {
-    margin-bottom: 40px;
+    margin-bottom: 70px;
   }
 
   .name {
@@ -380,11 +380,11 @@ input[type=radio]:checked + label {
   }
 
   .line {
-  height: 100%;
-  width: 3px;
-  align-self: center;
-  background-color: #F7DC4B;
-}
+    height: 100%;
+    width: 3px;
+    align-self: center;
+    background-color: #F7DC4B;
+  }
 
   .date {
     left: -14px;
