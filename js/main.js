@@ -9,8 +9,8 @@ $('#radio1').click(timelineShow1);
 // define a function to toggle timeline show for button 1 
 // define a function to toggle timeline and timeline reverse for button 2
 function timelineShow () {
-  $('.timeline').toggleClass('show');
-  $('.intro-reverse').toggleClass('show');
+  $('.timeline').addClass('show');
+  $('.intro-reverse').addClass('show');
   $('html, body').animate({scrollTop: header, duration: 1200}, 'easeOut');
 }
 
@@ -21,7 +21,7 @@ function timelineShow1 () {
 }
 
 function timelineShowReverse () {
-  $('.timeline').toggleClass('timeline-reverse');
+  $('.timeline').addClass('timeline-reverse');
 }
 
 

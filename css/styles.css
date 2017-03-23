@@ -57,6 +57,7 @@ h1 {
 
 .links {
   color: #CDCDCD;
+  transition: all 0.4s ease-out;
 }
 
 .links:hover { 
@@ -65,6 +66,7 @@ h1 {
 
 .links-port {
   color: #9B9B9B;
+  transition: all 0.4s ease-out;  
 }
 
 .links-port:hover { 
@@ -231,6 +233,11 @@ input[type=radio]:checked + label {
   transition: all 0.6s;
 }
 
+.date.edu {
+  background-color: #EEC900;
+  border: 1px solid #EEC900;
+}
+
 .date-selected {
   position: absolute;
   display: flex;
@@ -256,6 +263,12 @@ input[type=radio]:checked + label {
   -webkit-transform: rotate(45deg);
   color: black;
   font-weight: 700;
+}
+
+.pencil {
+  height: 32px;
+  width: 26px;
+  margin-right: 10px;
 }
 
 .company-location-dates {
@@ -319,8 +332,8 @@ input[type=radio]:checked + label {
   opacity: 1;
 }
 
-
-/*@media screen and (min-width: 1201px) {
+/*
+@media screen and (min-width: 1201px) {
 
 }*/
 
@@ -435,6 +448,11 @@ input[type=radio]:checked + label {
     font-size: 14px;
   }  
 
+  .pencil {
+    height: 26px;
+    width: 20px;
+    margin-right: 10px;
+}
 }  
 
 
@@ -532,5 +550,11 @@ input[type=radio]:checked + label {
   .company-location-dates p {
     font-size: 14px;
   }  
+
+  .pencil {
+    height: 26px;
+    width: 20px;
+    margin-right: 10px;
+}
 
 }  
