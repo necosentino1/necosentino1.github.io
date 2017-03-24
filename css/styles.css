@@ -538,6 +538,7 @@ input[type=radio]:checked + label {
 
   .intro-reverse {
     flex-direction: column;
+    height: 80px;
   }
 
   .radio-buttons {
